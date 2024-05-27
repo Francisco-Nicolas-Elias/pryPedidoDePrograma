@@ -30,6 +30,7 @@
         {
             this.txtReportes = new System.Windows.Forms.TextBox();
             this.btnVolver = new System.Windows.Forms.Button();
+            this.btnReporte = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtReportes
@@ -52,12 +53,23 @@
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
+            // btnReporte
+            // 
+            this.btnReporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporte.Location = new System.Drawing.Point(398, 286);
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(104, 45);
+            this.btnReporte.TabIndex = 2;
+            this.btnReporte.Text = "Notificar reporte";
+            this.btnReporte.UseVisualStyleBackColor = true;
+            // 
             // frmPantallaReportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(522, 343);
+            this.Controls.Add(this.btnReporte);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.txtReportes);
             this.Name = "frmPantallaReportes";
@@ -72,5 +84,6 @@
 
         private System.Windows.Forms.TextBox txtReportes;
         private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.Button btnReporte;
     }
 }

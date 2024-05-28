@@ -21,7 +21,7 @@ namespace pryPedidoDePrograma
         //Delaro una variable de tipo DataSet que voy a utilizar como contenedor de datos de las tablas de la base de datos 
         DataSet objDS;
 
-        private string varCadenaConexion2 = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=BDusuarios.accdb";
+        private string varCadenaConexion2 = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=BDusuarioCasa.accdb";
 
         public static bool acceso;
 
@@ -102,6 +102,8 @@ namespace pryPedidoDePrograma
             {
                 ConectarBD();
 
+                objDS = new DataSet();
+
                 comando = new OleDbCommand();
 
                 comando.Connection = conexion;
@@ -153,6 +155,8 @@ namespace pryPedidoDePrograma
             try
             {
                 ConectarBD();
+
+                objDS = new DataSet();
 
                 comando = new OleDbCommand();
 
